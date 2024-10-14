@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #fbf8cc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+    .heading {
+        @apply font-bold md:text-[6rem]/[6.4rem] text-[3rem]/[3.2rem] py-2;
+    }
+    .section {
+        @apply md:py-20 py-8;
+    }
+}
