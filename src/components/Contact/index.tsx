@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { LINKEDIN, MAIL } from "~/constants";
 
 function Contact() {
     return (
-        <section className='md:pb-20 pb-8'>
+        <section id='contact' className='md:pb-20 pb-8'>
             <h2 className='heading text-[#F7F197]'>contact.</h2>
             <div className='flex gap-4 mt-2'>
                 <Image
@@ -20,12 +21,10 @@ function Contact() {
                     </p>
                     <ul className='pt-4 space-y-1'>
                         <li>
-                            <a href='mailto:vietnguyen142002@gmail.com'>
-                                vietnguyen142002@gmai.com
-                            </a>
+                            <a href={`mailto:${MAIL}`}>{MAIL}</a>
                         </li>
                         <li>
-                            <a href='https://www.linkedin.com/in/quocviet142/'>
+                            <a target='_blank' href={LINKEDIN}>
                                 LinkedIn
                             </a>
                         </li>

@@ -64,18 +64,24 @@ const WorkItemOne = ({
                     src={image}
                     alt={title}
                     className='w-full aspect-[4/3] object-cover'
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={300}
                 />
             </Link>
-            <h3 className='mt-2'>{title}</h3>
+            <h3 className='my-2 font-semibold'>{title}</h3>
             <p>{description}</p>
             <p>{tech}</p>
         </motion.li>
     );
 };
 
-const WorkItemTwo = ({ title, description, image, url }: WorkItemProps) => {
+const WorkItemTwo = ({
+    title,
+    description,
+    image,
+    url,
+    tech,
+}: WorkItemProps) => {
     return (
         <div className='flex md:flex-row flex-col gap-4 mt-6'>
             <Link href={url}>
@@ -83,13 +89,14 @@ const WorkItemTwo = ({ title, description, image, url }: WorkItemProps) => {
                     src={image}
                     alt={title}
                     className='w-full aspect-[4/3] object-cover'
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={300}
                 />
             </Link>
             <div className='flex justify-center flex-col'>
-                <h3 className='font-semibold text-lg'>{title}</h3>
+                <h3 className='font-semibold text-lg my-2'>{title}</h3>
                 <p>{description}</p>
+                <p>{tech}</p>
             </div>
         </div>
     );

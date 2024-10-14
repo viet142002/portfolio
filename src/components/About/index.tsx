@@ -6,7 +6,7 @@ import { container, items } from "~/utils/framerMotion";
 
 function About() {
     return (
-        <section className='section'>
+        <section id='about' className='section'>
             <motion.h2
                 className='text-[#F7F197] heading'
                 initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ function About() {
                 {ABOUT_ME}
             </motion.p>
             <motion.ul
-                className='mt-6 md:mt-16 pl-10 md:pl-[200px] space-y-6'
+                className='mt-6 md:mt-12 pl-10 md:pl-[200px] space-y-6'
                 initial='hidden'
                 whileInView='show'
                 variants={container}

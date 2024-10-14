@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
     return (
-        <section className='md:pt-20 py-8'>
+        <section id='home' className='md:pt-20 py-8'>
             <div className='flex justify-between gap-8 md:flex-row flex-col'>
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -23,7 +23,12 @@ function Hero() {
                         I design and code beautifully simple things, and I love
                         what I do.
                     </p>
-                    <button className='border border-[#474306] relative px-4 py-2 mt-8'>
+                    <button
+                        className='border border-[#474306] relative px-4 py-2 mt-8'
+                        onClick={() => {
+                            window.location.href = "#contact";
+                        }}
+                    >
                         Contact Me
                         <div className='absolute w-full h-full bg-[#F5EE84] opacity-50 top-1 left-1' />
                     </button>
@@ -46,6 +51,7 @@ function Hero() {
                         alt='avt'
                         width={500}
                         height={500}
+                        priority
                     />
 
                     <Image

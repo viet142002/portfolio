@@ -5,15 +5,15 @@ export const ABOUT_ME = 'As a passionate web developer, I am seeking opportuniti
 export const LIST_ABOUT = [
     {
         title: 'Frontend',
-        description: 'I have experience in building responsive and user-friendly web applications using modern frontend technologies such as React, Next.js, and Tailwind CSS.'
+        description: 'I have experience in building responsive and user-friendly web applications using modern frontend technologies such as React, Next.js, Tailwind CSS, ThreeJs, Redux, Redux Toolkit, Zustand, SWR, React Query.'
     },
     {
         title: 'Backend',
         description: 'I have experience in building RESTful APIs and server-side applications using Node.js, Express, and MongoDB.'
     },
     {
-        title: 'DevOps',
-        description: 'I have experience in deploying web applications to cloud platforms such as Vercel and Heroku.'
+        title: 'Others',
+        description: 'I have experience in using Git, Docker, Postman and have a basic understanding of CI/CD, AWS, and Firebase.'
     },
 ]
 
@@ -21,31 +21,31 @@ export const WORK_DESCRIPTION = 'Here are some of the projects I have worked on.
 
 export const LIST_WORK = [
     {
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam vitae nunc.',
+        title: 'Web mekotrading',
+        description: 'Website introduction of MEKO Trading Limited Liability Company (MEKO LLC)',
         image: '/images/project.png',
-        url: '#',
-        tech: 'React, Tailwind CSS',
-    },
-    {
-        title: 'Project 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam vitae nunc.',
-        image: '/images/project.png',
-        url: '#',
-        tech: 'React, Tailwind CSS',
-    },
-    {
-        title: 'Project 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam vitae nunc.',
-        image: '/images/project.png',
-        url: '#',
-        tech: 'React, Tailwind CSS',
-    },
-    {
-        title: 'Project 4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam vitae nunc.',
-        image: '/images/project.png',
-        url: '#',
-        tech: 'React, Tailwind CSS',
+        url: 'https://mekotrading.com/',
+        tech: 'Next.js, TailwindCSS, Framer Motion, SWR',
     },
 ]
+
+export const PERSONAL_PROJECT = 'Here are some of my personal projects. Click on the project to view more details.'
+export const LIST_PERSONAL_PROJECT = [
+    {
+        title: 'Shop finder',
+        description: 'A web application that helps users find shops near their location and view shop details.',
+        image: '/images/project.png',
+        url: 'https://mekotrading.com/',
+        tech: 'React, Redux, Tailwind CSS, OpenStreetMap, Geolocation API, Antd, Axios, ExpressJs, MongoDB',
+    },
+    {
+        title: 'Clothing Shop',
+        description: 'A web application that helps users view and purchase clothes.',
+        image: '/images/project.png',
+        url: 'https://mekotrading.com/',
+        tech: 'Vue3, Pinia, SCSS, Axios, ExpressJs, MongoDB',
+    }
+];
+
+export const MAIL = 'vietnguyen142002@gmail.com';
+export const LINKEDIN = 'https://www.linkedin.com/in/viet-nguyen-8a709020a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';

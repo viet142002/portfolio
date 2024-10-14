@@ -3,7 +3,12 @@ import Contact from "~/components/Contact";
 import Hero from "~/components/Hero";
 import Work from "~/components/Work";
 
-import { LIST_WORK, WORK_DESCRIPTION } from "~/constants";
+import {
+    LIST_WORK,
+    PERSONAL_PROJECT,
+    WORK_DESCRIPTION,
+    LIST_PERSONAL_PROJECT,
+} from "~/constants";
 
 export default function Home() {
     return (
@@ -16,8 +21,8 @@ export default function Home() {
                 title='work.'
             />
             <Work
-                description={WORK_DESCRIPTION}
-                items={LIST_WORK}
+                description={PERSONAL_PROJECT}
+                items={LIST_PERSONAL_PROJECT}
                 title='personal.'
             />
             <Contact />
